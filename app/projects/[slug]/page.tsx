@@ -44,10 +44,10 @@ export default async function ProjectDetailPage({ params }: PageProps<"/projects
           </h1>
         </div>
         <div className="absolute bottom-16 right-5 flex gap-2 md:right-10">
-          <Link href={`/projects/${prev.slug}`} aria-label="Previous project" className="grid h-11 w-11 place-items-center rounded-full border border-white/40 transition-colors hover:bg-white hover:text-ink">
+          <Link href={`/projects/${prev.slug}`} aria-label="Previous project" className="grid h-11 w-11 place-items-center rounded-full border border-gold/50 transition-colors hover:border-gold hover:bg-gold hover:text-olive">
             <Chevron dir="left" />
           </Link>
-          <Link href={`/projects/${next.slug}`} aria-label="Next project" className="grid h-11 w-11 place-items-center rounded-full border border-white/40 transition-colors hover:bg-white hover:text-ink">
+          <Link href={`/projects/${next.slug}`} aria-label="Next project" className="grid h-11 w-11 place-items-center rounded-full border border-gold/50 transition-colors hover:border-gold hover:bg-gold hover:text-olive">
             <Chevron />
           </Link>
         </div>

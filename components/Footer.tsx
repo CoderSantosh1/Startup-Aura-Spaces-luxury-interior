@@ -1,10 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
-import { contact, img, moreNav, nav } from "@/lib/data";
+import { contact, moreNav, nav } from "@/lib/data";
 import Logo from "./Logo";
-import { Facebook, Instagram, LinkedIn, YouTube } from "./Icons";
-
-const strip = [img.living2, img.bedroom1, img.kitchen1, img.living8, img.decor2, img.villa2];
+import SocialLinks from "./SocialLinks";
 
 export default function Footer() {
   return (
@@ -15,18 +12,10 @@ export default function Footer() {
         <div className="md:col-span-2">
           <Logo className="inline-block" />
           <p className="mt-6 max-w-xs text-base text-white/60">Timeless interiors, crafted with passion.</p>
-          <div className="mt-6 flex gap-3">
-            {[Instagram, Facebook, LinkedIn, YouTube].map((Icon, i) => (
-              <a
-                key={i}
-                href="#"
-                aria-label="Social link"
-                className="grid h-10 w-10 place-items-center rounded-full border border-white/20 transition-all hover:-translate-y-1 hover:bg-white hover:text-ink"
-              >
-                <Icon />
-              </a>
-            ))}
-          </div>
+          <SocialLinks
+            className="mt-6 flex gap-3"
+            linkClassName="grid h-10 w-10 place-items-center rounded-full border border-gold/40 text-gold transition-all hover:-translate-y-1 hover:bg-gold hover:text-olive"
+          />
         </div>
         <div>
           <h4 className="mb-4 text-sm uppercase tracking-[0.2em] text-white/50">Explore</h4>

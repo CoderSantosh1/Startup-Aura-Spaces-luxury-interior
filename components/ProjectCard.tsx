@@ -15,7 +15,7 @@ export default function ProjectCard({ project, tall = false }: { project: Projec
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 transition-opacity duration-700 group-hover:opacity-100" />
-        <span className="absolute bottom-5 left-5 translate-y-4 rounded-full bg-white/90 px-4 py-1.5 text-sm font-medium text-ink opacity-0 backdrop-blur transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+        <span className="absolute bottom-5 left-5 translate-y-4 rounded-full bg-gold px-4 py-1.5 text-sm font-medium text-olive opacity-0 backdrop-blur transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
           View Project
         </span>
       </div>
@@ -24,7 +24,7 @@ export default function ProjectCard({ project, tall = false }: { project: Projec
           <h3 className="text-lg font-medium">{project.title}</h3>
           <p className="text-sm text-muted">{project.category}</p>
         </div>
-        <span className="arrow-btn grid h-8 w-8 shrink-0 place-items-center rounded-full bg-olive text-white">
+        <span className="arrow-btn grid h-8 w-8 shrink-0 place-items-center rounded-full bg-olive text-gold">
           <ArrowUpRight className="h-3.5 w-3.5" />
         </span>
       </div>

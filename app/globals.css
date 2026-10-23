@@ -8,6 +8,8 @@
   --ink: #1d1f1a;
   --muted: #7b7568;
   --gold: #b89a6a;
+  --gold-2: #c9ad7f;
+  --danger: #b4533f;
 }
 
 @theme inline {
@@ -18,6 +20,8 @@
   --color-ink: var(--ink);
   --color-muted: var(--muted);
   --color-gold: var(--gold);
+  --color-gold-2: var(--gold-2);
+  --color-danger: var(--danger);
   --font-sans: var(--font-outfit);
   --font-display: var(--font-outfit);
 }

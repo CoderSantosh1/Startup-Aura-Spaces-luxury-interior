@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import ArrowButton from "@/components/ArrowButton";
 import CtaBanner from "@/components/CtaBanner";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
@@ -35,6 +36,9 @@ export default function ServicesPage() {
                   </li>
                 ))}
               </ul>
+              <ArrowButton href={`/services/${s.slug}`} tone={i % 2 ? "dark" : "light"} className="mt-10">
+                View Details
+              </ArrowButton>
             </Reveal>
           </div>
         </section>

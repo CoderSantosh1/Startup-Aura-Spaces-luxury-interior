@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import ArrowButton from "./ArrowButton";
 import { Chevron } from "./Icons";
 import SplitText from "./SplitText";
 
@@ -40,19 +39,19 @@ export default function HeroSlider({ slides }: { slides: Slide[] }) {
         {/* <p key={`p${index}`} className="fade-up mt-6 max-w-md text-base text-white/80 md:text-lg" style={{ "--d": "700ms" } as React.CSSProperties}>
           {slide.subtitle}
         </p> */}
-        <div key={`b${index}`} className="fade-up mt-10 " style={{ "--d": "900ms" } as React.CSSProperties}>
+        {/* <div key={`b${index}`} className="fade-up mt-10 " style={{ "--d": "900ms" } as React.CSSProperties}>
           <ArrowButton  href="/projects">Explore More</ArrowButton>
-        </div>
+        </div> */}
       </div>
 
       {/* controls */}
       <div className="absolute inset-x-0 bottom-8 mx-auto flex max-w-7xl items-center justify-center px-5 md:px-10">
         
         <div className="flex gap-2">
-          <button onClick={() => go(-1)} aria-label="Previous slide" className="grid h-11 w-11 place-items-center rounded-full border border-white/40 transition-colors hover:bg-white hover:text-ink">
+          <button onClick={() => go(-1)} aria-label="Previous slide" className="grid h-11 w-11 place-items-center rounded-full border border-gold/50 transition-colors hover:border-gold hover:bg-gold hover:text-olive">
             <Chevron dir="left" />
           </button>
-          <button onClick={() => go(1)} aria-label="Next slide" className="grid h-11 w-11 place-items-center rounded-full border border-white/40 transition-colors hover:bg-white hover:text-ink">
+          <button onClick={() => go(1)} aria-label="Next slide" className="grid h-11 w-11 place-items-center rounded-full border border-gold/50 transition-colors hover:border-gold hover:bg-gold hover:text-olive">
             <Chevron />
           </button>
         </div>

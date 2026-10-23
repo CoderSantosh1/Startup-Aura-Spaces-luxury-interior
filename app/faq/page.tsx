@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Accordion from "@/components/Accordion";
-import ArrowButton from "@/components/ArrowButton";
 import CtaBanner from "@/components/CtaBanner";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";

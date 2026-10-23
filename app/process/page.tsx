@@ -18,7 +18,7 @@ export default function ProcessPage() {
           {processSteps.map((s, i) => (
             <div key={s.title} className="relative grid items-center gap-8 py-10 md:grid-cols-[56px_1fr_1.2fr] md:gap-12">
               <Reveal dir="zoom">
-                <span className="relative z-10 grid h-14 w-14 place-items-center rounded-full bg-olive text-base text-white ring-8 ring-cream">
+                <span className="relative z-10 grid h-14 w-14 place-items-center rounded-full bg-olive text-base text-gold ring-8 ring-cream">
                   0{i + 1}
                 </span>
               </Reveal>

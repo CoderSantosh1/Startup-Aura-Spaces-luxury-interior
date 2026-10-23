@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
-import { Clock, Facebook, Instagram, LinkedIn, Mail, Phone, Pin, YouTube } from "@/components/Icons";
+import { Clock, Mail, Phone, Pin } from "@/components/Icons";
+import SocialLinks from "@/components/SocialLinks";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import { contact, img } from "@/lib/data";
@@ -27,7 +28,7 @@ export default function ContactPage() {
           <ul className="mt-10 space-y-6">
             {info.map(({ icon: Icon, label, value, href }, i) => (
               <Reveal as="li" key={label} delay={i * 100} dir="left" className="flex items-center gap-4">
-                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-olive text-white">
+                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-olive text-gold">
                   <Icon />
                 </span>
                 <div>
@@ -41,12 +42,8 @@ export default function ContactPage() {
               </Reveal>
             ))}
           </ul>
-          <Reveal delay={450} className="mt-10 flex gap-3">
-            {[Instagram, Facebook, LinkedIn, YouTube].map((Icon, i) => (
-              <a key={i} href="#" aria-label="Social link" className="grid h-10 w-10 place-items-center rounded-full bg-olive text-white transition-transform hover:-translate-y-1">
-                <Icon />
-              </a>
-            ))}
+          <Reveal delay={450} className="mt-10">
+            <SocialLinks linkClassName="grid h-10 w-10 place-items-center rounded-full bg-olive text-gold transition-all hover:-translate-y-1 hover:bg-gold hover:text-olive" />
           </Reveal>
         </div>
         <Reveal delay={150} className="rounded-3xl bg-sand/60 p-6 md:p-10">

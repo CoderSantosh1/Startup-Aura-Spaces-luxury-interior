@@ -317,3 +317,105 @@ export const contact = {
   city: "San Francisco, CA 94102, USA",
   hours: "Mon – Sat: 9:00 AM – 6:00 PM",
 };
+
+export const socials = [
+  { name: "Instagram", href: "https://www.instagram.com/" },
+  { name: "Facebook", href: "https://www.facebook.com/" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/" },
+  { name: "YouTube", href: "https://www.youtube.com/" },
+] as const;
+
+type ServiceDetail = {
+  intro: string;
+  features: string[];
+  gallery: string[];
+  category: Project["category"];
+  duration: string;
+};
+
+export const serviceDetails: Record<string, ServiceDetail> = {
+  residential: {
+    intro: "Complete home interiors shaped around your family, your habits and your taste.",
+    features: ["Space planning", "Custom furniture", "Material & finish curation", "Lighting design"],
+    gallery: [img.living2, img.living5, img.bedroom1, img.kitchen2],
+    category: "Residential",
+    duration: "3–6 Months",
+  },
+  commercial: {
+    intro: "Workplaces and stores that reflect your brand and help people do their best work.",
+    features: ["Brand-led design", "Workspace planning", "Acoustic solutions", "Fit-out management"],
+    gallery: [img.office1, img.office2, img.living9, img.living11],
+    category: "Commercial",
+    duration: "2–5 Months",
+  },
+  consultation: {
+    intro: "Expert advice for a single room or a whole home, so every decision feels right.",
+    features: ["On-site visit", "Layout review", "Colour & material advice", "Shopping list"],
+    gallery: [img.living7, img.decor2, img.living4, img.extra3],
+    category: "Residential",
+    duration: "1–2 Weeks",
+  },
+  hospitality: {
+    intro: "Hotels, restaurants and lounges with atmosphere guests remember.",
+    features: ["Concept & storytelling", "Guest journey design", "Bespoke lighting", "Durable luxury finishes"],
+    gallery: [img.restaurant1, img.hotel1, img.hotel2, img.restaurant2],
+    category: "Hospitality",
+    duration: "4–12 Months",
+  },
+  styling: {
+    intro: "The final layer: art, textiles and accessories that make a space feel finished.",
+    features: ["Art selection", "Soft furnishings", "Decor sourcing", "Seasonal refresh"],
+    gallery: [img.decor2, img.decor1, img.living6, img.extra6],
+    category: "Residential",
+    duration: "2–4 Weeks",
+  },
+  turnkey: {
+    intro: "One team from concept to keys in hand. You move in, we handle the rest.",
+    features: ["Design & 3D visuals", "Civil & MEP works", "Furniture & fit-out", "Final styling"],
+    gallery: [img.kitchen1, img.villa2, img.villa3, img.villa4],
+    category: "Residential",
+    duration: "4–8 Months",
+  },
+  kitchen: {
+    intro: "Kitchens that work beautifully, with smart storage and lasting materials.",
+    features: ["Ergonomic layouts", "Modular cabinetry", "Stone & wood surfaces", "Appliance integration"],
+    gallery: [img.kitchen2, img.kitchen1, img.kitchen3, img.kitchen4],
+    category: "Residential",
+    duration: "6–10 Weeks",
+  },
+  bedroom: {
+    intro: "Calm, layered bedrooms designed for rest and quiet luxury.",
+    features: ["Bespoke headboards", "Wardrobe design", "Layered lighting", "Soft textiles"],
+    gallery: [img.extra1, img.bedroom1, img.bedroom3, img.bedroom4],
+    category: "Residential",
+    duration: "4–8 Weeks",
+  },
+  lighting: {
+    intro: "Light that shapes mood, highlights texture and changes with the day.",
+    features: ["Lighting plans", "Statement fixtures", "Smart controls", "Ambient layering"],
+    gallery: [img.extra2, img.living8, img.restaurant1, img.living3],
+    category: "Residential",
+    duration: "2–4 Weeks",
+  },
+  furniture: {
+    intro: "Furniture chosen and made to last, in perfect proportion to your space.",
+    features: ["Custom pieces", "Curated brands", "Upholstery & finishes", "Delivery & placement"],
+    gallery: [img.extra3, img.living5, img.living10, img.decor1],
+    category: "Residential",
+    duration: "4–10 Weeks",
+  },
+  renovation: {
+    intro: "Fresh life for familiar spaces, keeping what you love and reworking the rest.",
+    features: ["Condition survey", "Structural changes", "New finishes", "Project management"],
+    gallery: [img.extra4, img.living4, img.kitchen3, img.bedroom2],
+    category: "Residential",
+    duration: "2–5 Months",
+  },
+  "3d": {
+    intro: "Photorealistic renders and walkthroughs, so you see your space before it's built.",
+    features: ["Photoreal renders", "360° walkthroughs", "Material swaps", "Fast revisions"],
+    gallery: [img.extra5, img.hero1, img.living2, img.extra6],
+    category: "Commercial",
+    duration: "1–3 Weeks",
+  },
+};

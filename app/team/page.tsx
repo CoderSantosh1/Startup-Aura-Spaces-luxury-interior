@@ -22,7 +22,7 @@ export default function TeamPage() {
         <Reveal>
           <h2 className="text-4xl font-light md:text-6xl">Join Our Studio</h2>
           <p className="mt-4 text-base text-white/70">We&apos;re always looking for creative minds.</p>
-          <a href={`mailto:${contact.email}`} className="mt-10 inline-block rounded-full border border-white/50 px-8 py-3 text-base transition-colors hover:bg-white hover:text-ink">
+          <a href={`mailto:${contact.email}`} className="mt-10 inline-block rounded-full border border-gold/60 px-8 py-3 text-base text-gold transition-colors hover:bg-gold hover:text-olive">
             {contact.email}
           </a>
         </Reveal>

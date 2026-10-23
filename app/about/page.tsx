@@ -3,7 +3,6 @@ import Image from "next/image";
 import ArrowButton from "@/components/ArrowButton";
 import Counter from "@/components/Counter";
 import CtaBanner from "@/components/CtaBanner";
-import { Play } from "@/components/Icons";
 import PageHero from "@/components/PageHero";
 import Parallax from "@/components/Parallax";
 import Reveal from "@/components/Reveal";

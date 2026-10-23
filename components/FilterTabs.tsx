@@ -10,7 +10,7 @@ export default function FilterTabs({ tabs, active, onChange }: Props) {
           key={t}
           onClick={() => onChange(t)}
           className={`rounded-full border px-5 py-2 text-sm transition-all duration-300 ${
-            active === t ? "border-olive bg-olive text-white" : "border-ink/15 bg-white/60 hover:border-olive hover:bg-white"
+            active === t ? "border-olive bg-olive text-gold shadow-md" : "border-ink/15 bg-white/60 hover:border-gold hover:bg-gold hover:text-olive"
           }`}
         >
           {t}
