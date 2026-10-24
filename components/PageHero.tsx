@@ -14,16 +14,17 @@ type Props = {
 export default function PageHero({ title, subtitle, image, crumb, children }: Props) {
   return (
     <section className="relative isolate flex min-h-[78vh] items-end overflow-hidden bg-olive text-white">
-      <div className="absolute inset-y-0 right-0 -z-10 w-full md:w-[62%]">
-        <div className="kenburns absolute inset-0">
-          <Image src={image} alt="" fill priority sizes="(min-width:768px) 62vw, 100vw" className="object-cover" />
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 will-change-transform" style={{ animation: "page-hero-zoom 14s ease-in-out infinite alternate" }}>
+          <Image src={image} alt="" fill priority sizes="100vw" className="object-cover" />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-olive via-olive/60 to-transparent md:via-olive/30" />
+        {/* Keep the left side dark enough for the title over a full-width photo */}
+        <div className="absolute inset-0 bg-gradient-to-r from-olive/90 via-olive/55 to-olive/10" />
         <div className="absolute inset-0 bg-gradient-to-t from-olive/80 via-transparent to-olive/40" />
       </div>
-      <div className="mx-auto w-full max-w-7xl px-5 pb-20 pt-40 md:px-10 md:pb-24">
-        <Breadcrumb items={[{ label: crumb ?? title.replace(/\n/g, " ") }]} className="fade-up mb-6" />
-        <h1 className="text-4xl font-light leading-[1.02] tracking-tight md:text-5xl lg:text-6xl">
+      <div className="mx-auto w-full max-w-7xl px-5 pb-20 pt-40 md:px-10 md:pb-24 ">
+        <Breadcrumb items={[{ label: crumb ?? title.replace(/\n/g, " ") }]} className="fade-up mb-6 " />
+        <h1 className="text-4xl font-light leading-[1.02] tracking-tight md:text-5xl lg:text-6xl ">
           <SplitText text={title} />
         </h1>
         {subtitle && (
@@ -37,6 +38,8 @@ export default function PageHero({ title, subtitle, image, crumb, children }: Pr
           </div>
         )}
       </div>
+      {/* Keyframes live with the component so the zoom never depends on a cached global stylesheet */}
+      <style>{`@keyframes page-hero-zoom{from{transform:scale(1)}to{transform:scale(1.1)}}`}</style>
       {/* <div className="scroll-cue absolute bottom-8 right-8 hidden h-12 w-7 rounded-full border border-white/40 md:block">
         <span className="absolute left-1/2 top-2 h-2 w-px -translate-x-1/2 bg-white" />
       </div> */}

@@ -31,9 +31,19 @@ html {
   font-size: 106.25%; /* 17px base: scales every rem-based size up */
 }
 
+html,
+body {
+  /* Slide-in reveals (translateX) and zooming images can poke past the viewport before they animate;
+     clip so the page never grows a horizontal scrollbar. `clip` (not `hidden`) keeps the fixed header and sticky elements working. */
+  overflow-x: clip;
+}
+
 body {
   background: var(--cream);
   color: var(--ink);
+  /* Side-sliding reveals start off-screen; clip them so the page never scrolls sideways.
+     `clip` (not `hidden`) keeps position: sticky working. */
+  overflow-x: clip;
 }
 
 /* ---------- Section spacing ----------

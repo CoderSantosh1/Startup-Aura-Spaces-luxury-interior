@@ -117,25 +117,8 @@ export default function AboutPage() {
         <div className="absolute inset-0 flex items-center justify-center bg-black/30 px-5 text-center text-white">
           <Reveal dir="zoom">
             <p className="max-w-3xl text-3xl font-light leading-snug md:text-5xl">&ldquo;Every space has a story waiting to be told.&rdquo;</p>
-            <p className="mt-6 text-sm uppercase tracking-[0.3em] text-white/70">Priya Sharma, Founder</p>
+            {/* <p className="mt-6 text-sm uppercase tracking-[0.3em] text-white/70">Priya Sharma, Founder</p> */}
           </Reveal>
-        </div>
-      </section>
-
-      <section className="sec mx-auto max-w-7xl px-5 md:px-10">
-        <Reveal>
-          <h2 className="text-center text-4xl font-light tracking-tight md:text-5xl">What We Believe</h2>
-        </Reveal>
-        <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
-          {values.map((v, i) => (
-            <Reveal key={v.title} delay={i * 120}>
-              <div className="zoom-img group relative aspect-[3/4] overflow-hidden rounded-2xl">
-                <Image src={v.image} alt={v.title} fill sizes="(min-width:768px) 25vw, 50vw" className="object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <span className="absolute bottom-5 left-5 text-xl font-light text-white">{v.title}</span>
-              </div>
-            </Reveal>
-          ))}
         </div>
       </section>
 
