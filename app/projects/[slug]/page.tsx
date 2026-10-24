@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import Breadcrumb from "@/components/Breadcrumb";
 import CtaBanner from "@/components/CtaBanner";
 import { Chevron, Clock, Pin } from "@/components/Icons";
 import ProjectCard from "@/components/ProjectCard";
@@ -35,6 +36,7 @@ export default async function ProjectDetailPage({ params }: PageProps<"/projects
         </div>
         <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/70 via-black/10 to-black/40" />
         <div className="mx-auto flex h-full max-w-7xl flex-col justify-end px-5 pb-16 md:px-10">
+          <Breadcrumb items={[{ label: "Projects", href: "/projects" }, { label: project.title }]} className="fade-up mb-6" />
           <div className="fade-up mb-5 flex gap-2 text-sm">
             <span className="rounded-full border border-white/40 px-4 py-1.5">{project.category}</span>
             <span className="rounded-full border border-white/40 px-4 py-1.5">{project.year}</span>

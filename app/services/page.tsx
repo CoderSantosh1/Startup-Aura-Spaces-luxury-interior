@@ -12,7 +12,7 @@ export const metadata: Metadata = { title: "Services" };
 export default function ServicesPage() {
   return (
     <>
-      <PageHero title={"Our\nServices"} subtitle="Complete interior solutions for homes, offices and hospitality." image={img.living2} />
+      <PageHero crumb="Services" title={"Our\nServices"} subtitle="Complete interior solutions for homes, offices and hospitality." image={img.living2} />
 
       <section className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-28">
         <ServicesGrid services={services} />

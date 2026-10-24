@@ -67,6 +67,25 @@ export function Clock({ className = "h-4 w-4" }: P) {
   );
 }
 
+export function Target({ className = "h-4 w-4" }: P) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.6} strokeLinecap="round" aria-hidden>
+      <circle cx="12" cy="12" r="9" />
+      <circle cx="12" cy="12" r="5" />
+      <circle cx="12" cy="12" r="1.2" fill="currentColor" />
+    </svg>
+  );
+}
+
+export function Eye({ className = "h-4 w-4" }: P) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.6} strokeLinejoin="round" aria-hidden>
+      <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" />
+      <circle cx="12" cy="12" r="3" />
+    </svg>
+  );
+}
+
 export function Instagram({ className = "h-4 w-4" }: P) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.6} aria-hidden>

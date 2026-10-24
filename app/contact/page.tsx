@@ -18,7 +18,7 @@ const info: { icon: typeof Pin; label: string; value: string; href?: string }[] 
 export default function ContactPage() {
   return (
     <>
-      <PageHero title={"Get In\nTouch"} subtitle="Let's discuss your project and create something amazing together." image={img.hero3} />
+      <PageHero crumb="Contact" title={"Get In\nTouch"} subtitle="Let's discuss your project and create something amazing together." image={img.hero3} />
 
       <section className="mx-auto grid max-w-7xl gap-14 px-5 py-20 md:grid-cols-[1fr_1.3fr] md:px-10 md:py-28">
         <div>

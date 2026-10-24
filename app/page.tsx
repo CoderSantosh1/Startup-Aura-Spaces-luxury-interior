@@ -144,11 +144,13 @@ export default function Home() {
         <div className="absolute inset-0 flex items-center bg-black/35">
           <div className="mx-auto w-full max-w-7xl px-5 text-white md:px-10">
             <Reveal dir="left">
-              <h2 className="max-w-xl text-4xl font-light leading-tight md:text-6xl">Design is the silent ambassador of your story.</h2>
+            <h2 className="mx-auto max-w-xl text-center text-3xl font-light leading-tight md:text-5xl">
+              Design is the silent ambassador of your story.
+            </h2>
             </Reveal>
-            <Reveal dir="left" delay={200} className="mt-8">
+            {/* <Reveal dir="left" delay={200} className="mt-8">
               <ArrowButton href="/about">About Us</ArrowButton>
-            </Reveal>
+            </Reveal> */}
           </div>
         </div>
       </section>

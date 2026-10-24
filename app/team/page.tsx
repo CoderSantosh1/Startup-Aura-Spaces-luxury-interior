@@ -11,7 +11,7 @@ export const metadata: Metadata = { title: "Our Team" };
 export default function TeamPage() {
   return (
     <>
-      <PageHero title={"Our\nTeam"} subtitle="Talented designers and creative professionals." image={img.office2} />
+      <PageHero crumb="Team" title={"Our\nTeam"} subtitle="Talented designers and creative professionals." image={img.office2} />
 
       <section className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-28">
         <TeamGrid team={team} />

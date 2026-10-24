@@ -419,3 +419,20 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     duration: "1–3 Weeks",
   },
 };
+
+export const missionVision = [
+  {
+    key: "mission",
+    label: "Our Mission",
+    image: img.living7,
+    statement: "To design spaces that feel personal, work beautifully and stand the test of time.",
+    points: ["Listen first, design with purpose", "Honest pricing, no surprises", "Craftsmanship in every detail"],
+  },
+  {
+    key: "vision",
+    label: "Our Vision",
+    image: img.villa3,
+    statement: "To be the most trusted name in luxury interiors, inspiring better everyday living.",
+    points: ["Sustainable, lasting materials", "Design-led innovation", "Lifelong client relationships"],
+  },
+] as const;

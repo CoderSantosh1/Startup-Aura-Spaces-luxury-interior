@@ -11,7 +11,7 @@ export const metadata: Metadata = { title: "FAQ" };
 export default function FaqPage() {
   return (
     <>
-      <PageHero title={"Frequently\nAsked Questions"} subtitle="Answers about our interior design services." image={img.living4} />
+      <PageHero crumb="FAQ" title={"Frequently\nAsked Questions"} subtitle="Answers about our interior design services." image={img.living4} />
 
       <section className="mx-auto grid max-w-7xl gap-12 px-5 py-20 md:grid-cols-[1fr_1.5fr] md:px-10 md:py-28">
         <Reveal variant="wipe" className="hidden md:block">

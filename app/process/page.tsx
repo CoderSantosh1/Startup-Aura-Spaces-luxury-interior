@@ -10,7 +10,7 @@ export const metadata: Metadata = { title: "Our Process" };
 export default function ProcessPage() {
   return (
     <>
-      <PageHero title={"Our\nProcess"} subtitle="A simple, transparent path to bring your vision to life." image={img.living7} />
+      <PageHero crumb="Process" title={"Our\nProcess"} subtitle="A simple, transparent path to bring your vision to life." image={img.living7} />
 
       <section className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-28">
         <div className="relative">
