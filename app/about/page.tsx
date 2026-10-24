@@ -27,7 +27,7 @@ export default function AboutPage() {
         <ArrowButton href="#story">Learn More</ArrowButton>
       </PageHero>
 
-      <section className="mx-auto grid max-w-5xl grid-cols-3 gap-6 px-5 py-20 text-center md:px-10">
+      <section className="sec mx-auto grid max-w-5xl grid-cols-3 gap-6 px-5 text-center md:px-10">
         {[
           { n: 10, s: "+", l: "Years Experience" },
           { n: 250, s: "+", l: "Projects Completed" },
@@ -42,7 +42,7 @@ export default function AboutPage() {
         ))}
       </section>
 
-      <section id="story" className="mx-auto grid max-w-7xl scroll-mt-24 items-center gap-12 px-5 pb-28 md:grid-cols-2 md:px-10">
+      <section id="story" className="sec mx-auto grid max-w-7xl scroll-mt-24 items-center gap-12 px-5 md:grid-cols-2 md:px-10">
         <div>
           <Reveal>
             <h2 className="text-4xl font-light tracking-tight md:text-5xl">Our Story</h2>
@@ -69,13 +69,13 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="bg-sand/50 py-20 md:py-28">
+      <section className="band bg-sand/50">
         <div className="mx-auto max-w-7xl px-5 md:px-10">
           <Reveal className="text-center">
             <p className="mb-3 text-sm uppercase tracking-[0.25em] text-gold">Why We Exist</p>
             <h2 className="text-4xl font-light tracking-tight md:text-5xl">Our Mission &amp; Vision</h2>
           </Reveal>
-          <div className="mt-14 grid gap-6 md:grid-cols-2 md:gap-8">
+          <div className="mt-12 grid gap-6 md:grid-cols-2 md:gap-8">
             {pillars.map((p, i) => {
               const dark = i === 1;
               return (
@@ -122,11 +122,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-28 md:px-10">
+      <section className="sec mx-auto max-w-7xl px-5 md:px-10">
         <Reveal>
           <h2 className="text-center text-4xl font-light tracking-tight md:text-5xl">What We Believe</h2>
         </Reveal>
-        <div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-4">
+        <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
           {values.map((v, i) => (
             <Reveal key={v.title} delay={i * 120}>
               <div className="zoom-img group relative aspect-[3/4] overflow-hidden rounded-2xl">

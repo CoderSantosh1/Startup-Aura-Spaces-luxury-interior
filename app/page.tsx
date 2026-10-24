@@ -38,7 +38,7 @@ export default function Home() {
       <HeroSlider slides={slides} />
 
       {/* About */}
-      <section className="mx-auto grid max-w-7xl items-center gap-14 px-5 py-20 md:grid-cols-2 md:gap-20 md:px-10 md:py-28">
+      <section className="sec mx-auto grid max-w-7xl items-center gap-14 px-5 md:grid-cols-2 md:gap-20 md:px-10">
         <div className="relative pb-14 pr-10 md:pb-20 md:pr-16">
           <Reveal variant="wipe">
             <div className="zoom-img relative aspect-[4/5] overflow-hidden rounded-3xl">
@@ -93,9 +93,9 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section className="mx-auto max-w-7xl px-5 py-16 md:px-16 md:py-16">
+      <section className="sec mx-auto max-w-7xl px-5 md:px-10">
         <SectionTitle eyebrow="What we do" title="Our Services" className="text-center" />
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
           {services.slice(0, 3).map((s, i) => (
             <Reveal key={s.slug} delay={i * 150}>
               <Link href={`/services/${s.slug}`} className="group block">
@@ -115,7 +115,7 @@ export default function Home() {
       </section>
 
       {/* Featured Projects */}
-      <section className="bg-olive py-16 text-white md:py-16">
+      <section className="band bg-olive text-white">
         <div className="mx-auto max-w-7xl px-5 md:px-10">
           <div className="flex items-end justify-between gap-6">
             <Reveal>
@@ -128,7 +128,7 @@ export default function Home() {
               </Link>
             </Reveal>
           </div>
-          <div className="mt-14 grid gap-8 md:grid-cols-3 [&_.text-muted]:text-white/50">
+          <div className="mt-12 grid gap-8 md:grid-cols-3 [&_.text-muted]:text-white/50">
             {projects.slice(0, 3).map((p, i) => (
               <Reveal key={p.slug} delay={i * 150}>
                 <ProjectCard project={p} tall />
@@ -156,7 +156,7 @@ export default function Home() {
       </section>
 
       {/* Stats */}
-      <section className="mx-auto grid max-w-7xl grid-cols-3 gap-6 px-5 py-20 text-center md:px-10">
+      <section className="sec mx-auto grid max-w-7xl grid-cols-3 gap-6 px-5 text-center md:px-10">
         {[
           { n: 10, s: "+", l: "Years Experience" },
           { n: 250, s: "+", l: "Projects Completed" },
@@ -172,7 +172,7 @@ export default function Home() {
       </section>
 
       {/* Gallery mosaic */}
-      <section className="px-3 pb-24 md:px-6">
+      <section className="sec px-3 md:px-6">
         <div className="grid auto-rows-[170px] grid-cols-2 gap-3 md:auto-rows-[240px] md:grid-cols-4 md:gap-4">
           {galleryItems.slice(0, 6).map((g, i) => (
             <Reveal key={g.src} variant="wipe" delay={i * 100} className={mosaic[i]}>

@@ -10,7 +10,7 @@ import { ArrowUpRight, Chevron, Clock, Phone } from "@/components/Icons";
 import ProjectCard from "@/components/ProjectCard";
 import Reveal from "@/components/Reveal";
 import SplitText from "@/components/SplitText";
-import { contact, processSteps, projects, serviceDetails, services } from "@/lib/data";
+import { contact, projects, serviceDetails, services } from "@/lib/data";
 
 const highlights = [
   { n: 250, suffix: "+", label: "Projects" },
@@ -75,7 +75,7 @@ export default async function ServiceDetailPage({ params }: PageProps<"/services
       </section>
 
       {/* What's included */}
-      <section className="mx-auto grid max-w-7xl gap-12 px-5 py-20 md:grid-cols-[1.1fr_1fr] md:gap-20 md:px-10 md:py-28">
+      <section className="sec mx-auto grid max-w-7xl gap-12 px-5 md:grid-cols-[1.1fr_1fr] md:gap-20 md:px-10">
         <div>
           <Reveal>
             <p className="mb-3 text-sm uppercase tracking-[0.25em] text-gold">Service </p>
@@ -86,14 +86,7 @@ export default async function ServiceDetailPage({ params }: PageProps<"/services
               {detail.intro} Every project is planned in detail, visualised in 3D and delivered by our own team.
             </p>
           </Reveal>
-          <Reveal delay={150} className="mt-8 flex flex-wrap gap-3">
-            <span className="inline-flex items-center gap-2 rounded-full bg-sand px-5 py-2.5 text-sm">
-              <Clock className="h-4 w-4 text-gold" /> {detail.duration}
-            </span>
-            <span className="inline-flex items-center gap-2 rounded-full bg-sand px-5 py-2.5 text-sm">
-              <span className="h-2 w-2 rounded-full bg-gold" /> {detail.category}
-            </span>
-          </Reveal>
+         
           <Reveal delay={200}>
             <dl className="mt-10 grid max-w-lg grid-cols-3 divide-x divide-ink/10 rounded-2xl border border-ink/10 bg-white/60">
               {highlights.map((h) => (
@@ -107,18 +100,7 @@ export default async function ServiceDetailPage({ params }: PageProps<"/services
               ))}
             </dl>
           </Reveal>
-          <Reveal delay={250} className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
-            <ArrowButton href="/contact" tone="dark">Get a Free Quote</ArrowButton>
-            <a href={contact.phoneHref} className="group inline-flex items-center gap-3 text-base">
-              <span className="grid h-11 w-11 place-items-center rounded-full border border-gold text-gold transition-colors group-hover:bg-gold group-hover:text-olive">
-                <Phone className="h-4 w-4" />
-              </span>
-              <span>
-                <span className="block text-xs uppercase tracking-[0.15em] text-muted">Call us</span>
-                <span className="font-medium">{contact.phone}</span>
-              </span>
-            </a>
-          </Reveal>
+         
         </div>
         <Reveal delay={150} className="flex flex-col rounded-3xl bg-olive p-8 text-cream md:p-10">
           <h3 className="text-sm uppercase tracking-[0.25em] text-gold">What&apos;s Included</h3>
@@ -130,23 +112,12 @@ export default async function ServiceDetailPage({ params }: PageProps<"/services
               </li>
             ))}
           </ul>
-          <Link
-            href="/contact"
-            className="group mt-auto flex items-center justify-between gap-4 rounded-2xl border border-gold/30 bg-cream/5 p-5 transition-colors hover:border-gold hover:bg-gold/10"
-          >
-            <span>
-              <span className="block text-base">Not sure what you need?</span>
-              <span className="block text-sm text-cream/60">Talk to a designer, free of charge.</span>
-            </span>
-            <span className="arrow-btn grid h-10 w-10 shrink-0 place-items-center rounded-full bg-gold text-olive">
-              <ArrowUpRight className="h-4 w-4" />
-            </span>
-          </Link>
+       
         </Reveal>
       </section>
 
       {/* Gallery */}
-      <section className="px-3 md:px-6 pb-10">
+      <section className="sec px-3 md:px-6">
         <div className="grid gap-3 md:grid-cols-3 md:gap-4">
           {detail.gallery.map((src, i) => (
             <Reveal key={src} variant="wipe" delay={i ? (i - 1) * 150 : 0} className={tileSpan[i]}>
@@ -158,30 +129,11 @@ export default async function ServiceDetailPage({ params }: PageProps<"/services
         </div>
       </section>
 
-      {/* Process */}
-      {/* <section className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-28">
-        <Reveal className="flex flex-wrap items-end justify-between gap-6">
-          <h2 className="text-4xl font-light tracking-tight md:text-5xl">How It Works</h2>
-          <Link href="/process" className="text-base text-muted underline-offset-4 hover:text-ink hover:underline">Our full process</Link>
-        </Reveal>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {processSteps.map((s, i) => (
-            <Reveal key={s.title} delay={i * 120}>
-              <div className="group h-full rounded-2xl border border-ink/10 bg-white/60 p-6 transition-all duration-500 hover:-translate-y-1 hover:border-gold hover:bg-white hover:shadow-xl">
-                <span className="grid h-12 w-12 place-items-center rounded-full bg-olive text-base text-gold transition-colors group-hover:bg-gold group-hover:text-olive">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <h3 className="mt-6 text-xl font-medium">{s.title}</h3>
-                <p className="mt-2 text-base text-muted">{s.text}</p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </section> */}
+   
 
       {/* Related projects */}
       {related.length > 0 && (
-        <section className="bg-olive py-20 text-white md:py-28">
+        <section className="band bg-olive text-white">
           <div className="mx-auto max-w-7xl px-5 md:px-10">
             <Reveal className="flex flex-wrap items-end justify-between gap-6">
               <h2 className="text-4xl font-light tracking-tight md:text-5xl">Related Projects</h2>
@@ -199,7 +151,7 @@ export default async function ServiceDetailPage({ params }: PageProps<"/services
       )}
 
       {/* Other services */}
-      <section className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-28">
+      <section className="sec mx-auto max-w-7xl px-5 md:px-10">
         <Reveal>
           <h2 className="text-4xl font-light tracking-tight md:text-5xl">Explore More Services</h2>
         </Reveal>

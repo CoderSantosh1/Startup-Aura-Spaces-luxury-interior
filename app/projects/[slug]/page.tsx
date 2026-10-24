@@ -55,7 +55,7 @@ export default async function ProjectDetailPage({ params }: PageProps<"/projects
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-7xl gap-12 px-5 py-20 md:grid-cols-[1.3fr_1fr] md:px-10 md:py-28">
+      <section className="sec mx-auto grid max-w-7xl gap-12 px-5 md:grid-cols-[1.3fr_1fr] md:px-10">
         <Reveal>
           <p className="text-2xl font-light leading-snug md:text-4xl">{project.text}</p>
         </Reveal>
@@ -66,7 +66,7 @@ export default async function ProjectDetailPage({ params }: PageProps<"/projects
         </Reveal>
       </section>
 
-      <section className="px-3 md:px-6">
+      <section className="sec px-3 md:px-6">
         <div className="grid gap-3 md:grid-cols-2">
           {project.gallery.map((src, i) => (
             <Reveal key={src} variant="wipe" delay={(i % 2) * 150} className={i === 0 ? "md:col-span-2" : ""}>
@@ -78,7 +78,7 @@ export default async function ProjectDetailPage({ params }: PageProps<"/projects
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-24 md:px-10 md:py-32">
+      <section className="sec mx-auto max-w-7xl px-5 md:px-10">
         <div className="flex items-end justify-between">
           <Reveal>
             <h2 className="text-4xl font-light tracking-tight md:text-5xl">Related Projects</h2>

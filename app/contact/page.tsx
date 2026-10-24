@@ -20,7 +20,7 @@ export default function ContactPage() {
     <>
       <PageHero crumb="Contact" title={"Get In\nTouch"} subtitle="Let's discuss your project and create something amazing together." image={img.hero3} />
 
-      <section className="mx-auto grid max-w-7xl gap-14 px-5 py-20 md:grid-cols-[1fr_1.3fr] md:px-10 md:py-28">
+      <section className="sec mx-auto grid max-w-7xl gap-14 px-5 md:grid-cols-[1fr_1.3fr] md:px-10">
         <div>
           <Reveal>
             <h2 className="text-4xl font-light tracking-tight md:text-5xl">Say hello</h2>

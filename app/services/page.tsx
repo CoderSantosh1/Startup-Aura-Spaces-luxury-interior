@@ -14,7 +14,7 @@ export default function ServicesPage() {
     <>
       <PageHero crumb="Services" title={"Our\nServices"} subtitle="Complete interior solutions for homes, offices and hospitality." image={img.living2} />
 
-      <section className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-28">
+      <section className="sec mx-auto max-w-7xl px-5 md:px-10">
         <ServicesGrid services={services} />
       </section>
 
@@ -24,7 +24,7 @@ export default function ServicesPage() {
           <Reveal variant="wipe" className={`relative min-h-[60vh] ${i % 2 ? "md:order-2" : ""}`}>
             <Image src={i ? img.office2 : img.living3} alt={s.title} fill sizes="50vw" className="object-cover" />
           </Reveal>
-          <div className="flex items-center px-8 py-20 md:px-16">
+          <div className="band flex items-center px-8 md:px-16">
             <Reveal dir={i % 2 ? "left" : "right"}>
               <p className={`text-sm uppercase tracking-[0.25em] ${i % 2 ? "text-muted" : "text-gold"}`}>Signature</p>
               <h2 className="mt-4 text-4xl font-light leading-tight md:text-5xl">{s.title}</h2>

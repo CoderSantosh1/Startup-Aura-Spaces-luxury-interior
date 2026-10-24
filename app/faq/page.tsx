@@ -13,7 +13,7 @@ export default function FaqPage() {
     <>
       <PageHero crumb="FAQ" title={"Frequently\nAsked Questions"} subtitle="Answers about our interior design services." image={img.living4} />
 
-      <section className="mx-auto grid max-w-7xl gap-12 px-5 py-20 md:grid-cols-[1fr_1.5fr] md:px-10 md:py-28">
+      <section className="sec mx-auto grid max-w-7xl gap-12 px-5 md:grid-cols-[1fr_1.5fr] md:px-10">
         <Reveal variant="wipe" className="hidden md:block">
           <div className="sticky top-28">
             <div className="relative aspect-[3/4] overflow-hidden rounded-3xl">

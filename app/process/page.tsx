@@ -12,7 +12,7 @@ export default function ProcessPage() {
     <>
       <PageHero crumb="Process" title={"Our\nProcess"} subtitle="A simple, transparent path to bring your vision to life." image={img.living7} />
 
-      <section className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-28">
+      <section className="sec mx-auto max-w-7xl px-5 md:px-10">
         <div className="relative">
           <span className="absolute left-[27px] top-0 hidden h-full w-px bg-ink/10 md:block" />
           {processSteps.map((s, i) => (

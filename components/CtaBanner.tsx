@@ -5,7 +5,7 @@ import Reveal from "./Reveal";
 
 export default function CtaBanner({ image = img.hero3 }: { image?: string }) {
   return (
-    <section className="relative isolate overflow-hidden bg-olive py-16 text-center text-white md:py-16">
+    <section className="relative isolate overflow-hidden band bg-olive text-center text-white">
       <Image src={image} alt="" fill sizes="100vw" className="-z-10 object-cover opacity-40" />
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-olive/70 via-olive/40 to-olive/80" />
       <div className="px-5">

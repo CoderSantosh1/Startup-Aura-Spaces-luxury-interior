@@ -36,6 +36,28 @@ body {
   color: var(--ink);
 }
 
+/* ---------- Section spacing ----------
+   One vertical rhythm for every section on every page.
+   .sec  = plain (cream) section. When two sit back to back, the first drops its
+           bottom padding so the gap between them is a single --sy (top only).
+   .band = full-bleed coloured section (olive, sand, CTA); always padded both ends. */
+:root {
+  --sy: 4.5rem;
+}
+@media (min-width: 768px) {
+  :root {
+    --sy: 6.5rem;
+  }
+}
+.sec,
+.band {
+  padding-top: var(--sy);
+  padding-bottom: var(--sy);
+}
+.sec:has(+ .sec) {
+  padding-bottom: 0;
+}
+
 ::selection {
   background: var(--gold);
   color: #fff;

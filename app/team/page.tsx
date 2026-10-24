@@ -13,11 +13,11 @@ export default function TeamPage() {
     <>
       <PageHero crumb="Team" title={"Our\nTeam"} subtitle="Talented designers and creative professionals." image={img.office2} />
 
-      <section className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-28">
+      <section className="sec mx-auto max-w-7xl px-5 md:px-10">
         <TeamGrid team={team} />
       </section>
 
-      <section className="relative isolate overflow-hidden bg-olive px-5 py-28 text-center text-white">
+      <section className="relative isolate overflow-hidden band bg-olive px-5 text-center text-white">
         <Image src={img.living10} alt="" fill sizes="100vw" className="-z-10 object-cover opacity-30" />
         <Reveal>
           <h2 className="text-4xl font-light md:text-6xl">Join Our Studio</h2>
