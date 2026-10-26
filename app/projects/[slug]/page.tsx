@@ -70,7 +70,7 @@ export default async function ProjectDetailPage({ params }: PageProps<"/projects
         <div className="grid gap-3 md:grid-cols-2">
           {project.gallery.map((src, i) => (
             <Reveal key={src} variant="wipe" delay={(i % 2) * 150} className={i === 0 ? "md:col-span-2" : ""}>
-              <div className={`zoom-img relative overflow-hidden rounded-2xl ${i === 0 ? "aspect-[16/8]" : "aspect-[4/3]"}`}>
+              <div className={`zoom-img relative overflow-hidden rounded-2xl ${i === 0 ? "aspect-[16/8]" : "aspect-[4/4]"}`}>
                 <Image src={src} alt={`${project.title} view ${i + 1}`} fill sizes={i === 0 ? "100vw" : "50vw"} className="object-cover" />
               </div>
             </Reveal>

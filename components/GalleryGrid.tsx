@@ -58,7 +58,7 @@ export default function GalleryGrid({ items }: { items: Item[] }) {
       {open !== null && (
         <div className="page-enter fixed inset-0 z-[60] flex items-center justify-center bg-black/90 p-4" onClick={() => setOpen(null)}>
           <div className="relative h-[80vh] w-full max-w-5xl" onClick={(e) => e.stopPropagation()}>
-            <Image key={list[open].src} src={list[open].src.replace("w=1600", "w=2400")} alt={list[open].tag} fill sizes="100vw" className="page-enter object-contain" />
+            <Image key={list[open].src} src={list[open].src} alt={list[open].tag} fill sizes="100vw" className="page-enter object-contain" />
           </div>
           <button onClick={(e) => { e.stopPropagation(); step(-1); }} aria-label="Previous" className="absolute left-4 grid h-12 w-12 place-items-center rounded-full border border-gold/40 bg-olive/60 text-cream transition-colors hover:border-gold hover:bg-gold hover:text-olive">
             <Chevron dir="left" />

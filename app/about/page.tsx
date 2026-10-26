@@ -24,7 +24,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHero crumb="About Us" title={"About\nAura Spaces"} subtitle="Beautiful, functional spaces that reflect your lifestyle." image={img.living6}>
-        <ArrowButton href="#story">Learn More</ArrowButton>
+      
       </PageHero>
 
       <section className="sec mx-auto grid max-w-5xl grid-cols-3 gap-6 px-5 text-center md:px-10">
@@ -112,15 +112,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="relative">
-        <Parallax src={img.hero2} className="h-[70vh]" />
-        <div className="absolute inset-0 flex items-center justify-center bg-black/30 px-5 text-center text-white">
-          <Reveal dir="zoom">
-            <p className="max-w-3xl text-3xl font-light leading-snug md:text-5xl">&ldquo;Every space has a story waiting to be told.&rdquo;</p>
-            {/* <p className="mt-6 text-sm uppercase tracking-[0.3em] text-white/70">Priya Sharma, Founder</p> */}
-          </Reveal>
-        </div>
-      </section>
+     
 
       <CtaBanner image={img.living3} />
     </>
