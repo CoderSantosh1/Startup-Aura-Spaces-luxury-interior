@@ -3,14 +3,16 @@ import Image from "next/image";
 import CtaBanner from "@/components/CtaBanner";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
-import { img, processSteps } from "@/lib/data";
+import { assets, common, sections } from "@/data";
 
-export const metadata: Metadata = { title: "Our Process" };
+export const metadata: Metadata = { title: common.pageHeroes.process.metaTitle };
+
+const processSteps = sections.Process.steps;
 
 export default function ProcessPage() {
   return (
     <>
-      <PageHero crumb="Process" title={"Our\nProcess"} subtitle="A simple, transparent path to bring your vision to life." image={img.living7} />
+      <PageHero page="process" />
 
       <section className="sec mx-auto max-w-7xl px-5 md:px-10">
         <div className="relative">
@@ -37,7 +39,7 @@ export default function ProcessPage() {
       </section>
 
       <section className="grid grid-cols-2 md:grid-cols-4">
-        {[img.decor1, img.kitchen4, img.bedroom4, img.villa4].map((src, i) => (
+        {[assets.decor1, assets.kitchen4, assets.bedroom4, assets.villa4].map((src, i) => (
           <Reveal key={src} variant="wipe" delay={i * 120}>
             <div className="zoom-img relative aspect-square overflow-hidden">
               <Image src={src} alt="" fill sizes="25vw" className="object-cover" />
@@ -46,7 +48,7 @@ export default function ProcessPage() {
         ))}
       </section>
 
-      <CtaBanner image={img.hero1} />
+      <CtaBanner image={assets.hero1} />
     </>
   );
 }

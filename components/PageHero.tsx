@@ -1,17 +1,17 @@
 import Image from "next/image";
+import { common } from "@/data";
+import type { PageKey } from "@/types/category";
 import Breadcrumb from "./Breadcrumb";
 import SplitText from "./SplitText";
 
 type Props = {
-  title: string;
-  subtitle?: string;
-  image: string;
-  /** Breadcrumb label for this page; defaults to the title on one line. */
-  crumb?: string;
+  /** Which page's hero content (title, subtitle, image, breadcrumb) to show from data/category.json */
+  page: PageKey;
   children?: React.ReactNode;
 };
 
-export default function PageHero({ title, subtitle, image, crumb, children }: Props) {
+export default function PageHero({ page, children }: Props) {
+  const { title, subtitle, image, crumb } = common.pageHeroes[page];
   return (
     <section className="relative isolate flex min-h-[78vh] items-end overflow-hidden bg-olive text-white">
       <div className="absolute inset-0 -z-10">
@@ -23,7 +23,7 @@ export default function PageHero({ title, subtitle, image, crumb, children }: Pr
         <div className="absolute inset-0 bg-gradient-to-t from-olive/80 via-transparent to-olive/40" />
       </div>
       <div className="mx-auto w-full max-w-7xl px-5 pb-20 pt-40 md:px-10 md:pb-24 ">
-        <Breadcrumb items={[{ label: crumb ?? title.replace(/\n/g, " ") }]} className="fade-up mb-6 " />
+        <Breadcrumb items={[{ label: crumb }]} className="fade-up mb-6 " />
         <h1 className="text-4xl font-light leading-[1.02] tracking-tight md:text-5xl lg:text-6xl ">
           <SplitText text={title} />
         </h1>

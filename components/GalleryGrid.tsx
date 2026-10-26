@@ -2,16 +2,14 @@
 
 import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
+import type { GalleryItem } from "@/types/category";
 import FilterTabs from "./FilterTabs";
 import { Chevron, Plus } from "./Icons";
 import Reveal from "./Reveal";
 
-type Item = { src: string; tag: string };
-
-const tabs = ["All", "Living Room", "Bedroom", "Kitchen", "Office"];
 const spans = ["row-span-2", "", "", "row-span-2", "", "", "", "row-span-2"];
 
-export default function GalleryGrid({ items }: { items: Item[] }) {
+export default function GalleryGrid({ items, filters }: { items: GalleryItem[]; filters: string[] }) {
   const [active, setActive] = useState("All");
   const [open, setOpen] = useState<number | null>(null);
   const list = active === "All" ? items : items.filter((i) => i.tag === active);
@@ -38,7 +36,7 @@ export default function GalleryGrid({ items }: { items: Item[] }) {
 
   return (
     <>
-      <FilterTabs tabs={tabs} active={active} onChange={setActive} />
+      <FilterTabs tabs={filters} active={active} onChange={setActive} />
       <div key={active} className="mt-12 grid grid-flow-dense auto-rows-[180px] grid-cols-2 gap-3 md:auto-rows-[240px] md:grid-cols-3 md:gap-4 lg:grid-cols-4">
         {list.map((item, i) => (
           <Reveal key={item.src + i} delay={(i % 4) * 90} dir="zoom" className={spans[i % spans.length]}>

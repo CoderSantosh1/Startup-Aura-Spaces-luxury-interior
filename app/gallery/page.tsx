@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import CtaBanner from "@/components/CtaBanner";
 import GalleryGrid from "@/components/GalleryGrid";
 import PageHero from "@/components/PageHero";
-import { galleryItems, img } from "@/lib/data";
+import { assets, common, sections } from "@/data";
 
-export const metadata: Metadata = { title: "Gallery" };
+export const metadata: Metadata = { title: common.pageHeroes.gallery.metaTitle };
 
 export default function GalleryPage() {
   return (
     <>
-      <PageHero crumb="Gallery" title={"Our\nGallery"} subtitle="Beautiful spaces, designed with passion and precision." image={img.living11} />
+      <PageHero page="gallery" />
       <section className="sec mx-auto max-w-7xl px-5 md:px-10">
-        <GalleryGrid items={galleryItems} />
+        <GalleryGrid items={sections.Gallery.items} filters={sections.Gallery.filters} />
       </section>
-      <CtaBanner image={img.bedroom2} />
+      <CtaBanner image={assets.bedroom2} />
     </>
   );
 }

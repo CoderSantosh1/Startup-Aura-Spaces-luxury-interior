@@ -3,9 +3,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { contact, moreNav, nav } from "@/lib/data";
+import { common, site } from "@/data";
 import { ArrowUpRight } from "./Icons";
 import Logo from "./Logo";
+
+const { navigation: nav, moreNavigation: moreNav } = common;
 
 export default function Header() {
   const pathname = usePathname();
@@ -117,8 +119,8 @@ export default function Header() {
           ))}
         </nav>
         <div className={`mt-10 space-y-1 text-base text-cream/70 transition-opacity delay-500 duration-700 ${open ? "opacity-100" : "opacity-0"}`}>
-          <a href={contact.phoneHref} className="block hover:text-gold">{contact.phone}</a>
-          <a href={`mailto:${contact.email}`} className="block hover:text-gold">{contact.email}</a>
+          <a href={site.phoneHref} className="block hover:text-gold">{site.phone}</a>
+          <a href={`mailto:${site.email}`} className="block hover:text-gold">{site.email}</a>
         </div>
       </div>
     </header>

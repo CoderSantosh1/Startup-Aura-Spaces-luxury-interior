@@ -8,7 +8,9 @@ import { Chevron, Clock, Pin } from "@/components/Icons";
 import ProjectCard from "@/components/ProjectCard";
 import Reveal from "@/components/Reveal";
 import SplitText from "@/components/SplitText";
-import { projects } from "@/lib/data";
+import { sections } from "@/data";
+
+const projects = sections.Projects.items;
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));

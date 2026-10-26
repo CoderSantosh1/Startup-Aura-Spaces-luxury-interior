@@ -1,4 +1,5 @@
-import { socials } from "@/lib/data";
+import { common } from "@/data";
+import type { SocialName } from "@/types/category";
 import { Facebook, Instagram, LinkedIn, YouTube } from "./Icons";
 
 const icons = { Instagram, Facebook, LinkedIn, YouTube };
@@ -6,11 +7,12 @@ const icons = { Instagram, Facebook, LinkedIn, YouTube };
 type Props = {
   className?: string;
   linkClassName: string;
-  only?: (typeof socials)[number]["name"][];
+  only?: SocialName[];
   label?: string;
 };
 
 export default function SocialLinks({ className = "flex gap-3", linkClassName, only, label = "Aura Spaces" }: Props) {
+  const { socials } = common;
   const list = only ? socials.filter((s) => only.includes(s.name)) : socials;
   return (
     <div className={className}>

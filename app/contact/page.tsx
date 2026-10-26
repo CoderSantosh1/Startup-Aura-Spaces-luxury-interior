@@ -4,21 +4,21 @@ import { Clock, Mail, Phone, Pin } from "@/components/Icons";
 import SocialLinks from "@/components/SocialLinks";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
-import { contact, img } from "@/lib/data";
+import { common, site } from "@/data";
 
-export const metadata: Metadata = { title: "Contact" };
+export const metadata: Metadata = { title: common.pageHeroes.contact.metaTitle };
 
 const info: { icon: typeof Pin; label: string; value: string; href?: string }[] = [
-  { icon: Pin, label: "Our Office", value: `${contact.street}, ${contact.city}` },
-  { icon: Phone, label: "Call Us", value: contact.phone, href: contact.phoneHref },
-  { icon: Mail, label: "Email Us", value: contact.email, href: `mailto:${contact.email}` },
-  { icon: Clock, label: "Working Hours", value: contact.hours },
+  { icon: Pin, label: "Our Office", value: `${site.street}, ${site.city}` },
+  { icon: Phone, label: "Call Us", value: site.phone, href: site.phoneHref },
+  { icon: Mail, label: "Email Us", value: site.email, href: `mailto:${site.email}` },
+  { icon: Clock, label: "Working Hours", value: site.hours },
 ];
 
 export default function ContactPage() {
   return (
     <>
-      <PageHero crumb="Contact" title={"Get In\nTouch"} subtitle="Let's discuss your project and create something amazing together." image={img.hero3} />
+      <PageHero page="contact" />
 
       <section className="sec mx-auto grid max-w-7xl gap-14 px-5 md:grid-cols-[1fr_1.3fr] md:px-10">
         <div>
@@ -61,7 +61,7 @@ export default function ContactPage() {
           />
           <div className="absolute bottom-6 left-6 rounded-2xl bg-white p-5 shadow-xl">
             <p className="text-base font-medium">Our Location</p>
-            <p className="text-sm text-muted">{contact.street}, {contact.city}</p>
+            <p className="text-sm text-muted">{site.street}, {site.city}</p>
           </div>
         </div>
       </Reveal>

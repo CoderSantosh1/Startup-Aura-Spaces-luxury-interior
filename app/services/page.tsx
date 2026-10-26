@@ -5,14 +5,16 @@ import CtaBanner from "@/components/CtaBanner";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import ServicesGrid from "@/components/ServicesGrid";
-import { img, services } from "@/lib/data";
+import { assets, common, sections } from "@/data";
 
-export const metadata: Metadata = { title: "Services" };
+export const metadata: Metadata = { title: common.pageHeroes.services.metaTitle };
+
+const services = sections.Services.items;
 
 export default function ServicesPage() {
   return (
     <>
-      <PageHero crumb="Services" title={"Our\nServices"} subtitle="Complete interior solutions for homes, offices and hospitality." image={img.living2} />
+      <PageHero page="services" />
 
       <section className="sec mx-auto max-w-7xl px-5 md:px-10">
         <ServicesGrid services={services} />
@@ -22,7 +24,7 @@ export default function ServicesPage() {
       {services.slice(0, 2).map((s, i) => (
         <section key={s.slug} className={`grid items-stretch md:grid-cols-2 ${i % 2 ? "bg-sand" : "bg-olive text-white"}`}>
           <Reveal variant="wipe" className={`relative min-h-[60vh] ${i % 2 ? "md:order-2" : ""}`}>
-            <Image src={i ? img.office2 : img.living3} alt={s.title} fill sizes="50vw" className="object-cover" />
+            <Image src={i ? assets.office2 : assets.living3} alt={s.title} fill sizes="50vw" className="object-cover" />
           </Reveal>
           <div className="band flex items-center px-8 md:px-16">
             <Reveal dir={i % 2 ? "left" : "right"}>

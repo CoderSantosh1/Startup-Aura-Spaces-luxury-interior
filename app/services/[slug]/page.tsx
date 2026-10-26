@@ -11,13 +11,10 @@ import { ArrowUpRight, Chevron } from "@/components/Icons";
 import ProjectCard from "@/components/ProjectCard";
 import Reveal from "@/components/Reveal";
 import SplitText from "@/components/SplitText";
-import { projects, serviceDetails, services } from "@/lib/data";
+import { sections } from "@/data";
 
-const highlights = [
-  { n: 250, suffix: "+", label: "Projects" },
-  { n: 98, suffix: "%", label: "Happy Clients" },
-  { n: 10, suffix: "+", label: "Years" },
-];
+const { items: services, details: serviceDetails, highlights } = sections.Services;
+const projects = sections.Projects.items;
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -219,7 +216,7 @@ export default async function ServiceDetailPage({
                       </dt>
 
                       <dd className="text-3xl font-light text-gold md:text-4xl">
-                        <Counter to={h.n} suffix={h.suffix} />
+                        <Counter to={h.value} suffix={h.suffix} />
                       </dd>
                     </div>
                   ))}

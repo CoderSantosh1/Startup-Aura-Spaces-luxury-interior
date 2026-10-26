@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Project } from "@/lib/data";
+import type { Project } from "@/types/category";
 import { ArrowUpRight } from "./Icons";
 
 export default function ProjectCard({ project, tall = false }: { project: Project; tall?: boolean }) {

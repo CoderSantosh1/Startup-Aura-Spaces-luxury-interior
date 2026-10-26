@@ -1,43 +1,32 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import ArrowButton from "@/components/ArrowButton";
 import Counter from "@/components/Counter";
 import CtaBanner from "@/components/CtaBanner";
 import { Eye, Target } from "@/components/Icons";
 import PageHero from "@/components/PageHero";
-import Parallax from "@/components/Parallax";
 import Reveal from "@/components/Reveal";
-import { img, missionVision } from "@/lib/data";
+import { assets, common, sections } from "@/data";
 
-export const metadata: Metadata = { title: "About Us" };
+export const metadata: Metadata = { title: common.pageHeroes.about.metaTitle };
 
-const values = [
-  { title: "Timeless", image: img.living4 },
-  { title: "Functional", image: img.kitchen2 },
-  { title: "Personal", image: img.bedroom3 },
-  { title: "Crafted", image: img.decor1 },
-];
+const { missionVision } = sections.About;
 
 const pillars = missionVision.map((p) => ({ ...p, icon: p.key === "mission" ? Target : Eye }));
 
 export default function AboutPage() {
   return (
     <>
-      <PageHero crumb="About Us" title={"About\nAura Spaces"} subtitle="Beautiful, functional spaces that reflect your lifestyle." image={img.living6}>
+      <PageHero page="about">
       
       </PageHero>
 
       <section className="sec mx-auto grid max-w-5xl grid-cols-3 gap-6 px-5 text-center md:px-10">
-        {[
-          { n: 10, s: "+", l: "Years Experience" },
-          { n: 250, s: "+", l: "Projects Completed" },
-          { n: 98, s: "%", l: "Client Satisfaction" },
-        ].map((x, i) => (
-          <Reveal key={x.l} delay={i * 120}>
+        {common.stats.map((x, i) => (
+          <Reveal key={x.label} delay={i * 120}>
             <div className="text-4xl font-light md:text-6xl">
-              <Counter to={x.n} suffix={x.s} />
+              <Counter to={x.value} suffix={x.suffix} />
             </div>
-            <p className="mt-2 text-sm text-muted">{x.l}</p>
+            <p className="mt-2 text-sm text-muted">{x.label}</p>
           </Reveal>
         ))}
       </section>
@@ -54,16 +43,16 @@ export default function AboutPage() {
           </Reveal>
           <Reveal delay={300} className="mt-10 grid grid-cols-2 gap-4">
             <div className="zoom-img relative aspect-square overflow-hidden rounded-2xl">
-              <Image src={img.decor3} alt="" fill sizes="25vw" className="object-cover" />
+              <Image src={assets.decor3} alt="" fill sizes="25vw" className="object-cover" />
             </div>
             <div className="zoom-img relative aspect-square overflow-hidden rounded-2xl">
-              <Image src={img.living10} alt="" fill sizes="25vw" className="object-cover" />
+              <Image src={assets.living10} alt="" fill sizes="25vw" className="object-cover" />
             </div>
           </Reveal>
         </div>
         <Reveal variant="wipe">
           <div className="group relative aspect-[4/5] overflow-hidden rounded-3xl">
-            <Image src={img.living8} alt="Aura Spaces dining room" fill sizes="(min-width:768px) 50vw, 100vw" className="object-cover transition-transform duration-[1.5s] group-hover:scale-105" />         
+            <Image src={assets.living8} alt="Aura Spaces dining room" fill sizes="(min-width:768px) 50vw, 100vw" className="object-cover transition-transform duration-[1.5s] group-hover:scale-105" />         
           </div>
         </Reveal>
       </section>
@@ -114,7 +103,7 @@ export default function AboutPage() {
 
      
 
-      <CtaBanner image={img.living3} />
+      <CtaBanner image={assets.living3} />
     </>
   );
 }

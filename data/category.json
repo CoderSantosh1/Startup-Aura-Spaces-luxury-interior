@@ -1,0 +1,940 @@
+{
+  "common": {
+    "site": {
+      "name": "Aura Spaces",
+      "tagline": "Timeless interiors, crafted with passion.",
+      "phone": "+1 0000000",
+      "phoneHref": "tel:+10000000",
+      "email": "info@xyz.com",
+      "street": "1200 Market Street, Suite 400",
+      "city": "San Francisco, CA 94102, USA",
+      "hours": "Mon – Sat: 9:00 AM – 6:00 PM",
+      "copyright": "© 2026  Aura Spaces. All Rights Reserved. Powered by Lestow"
+    },
+    "navigation": [
+      {
+        "href": "/",
+        "label": "Home"
+      },
+      {
+        "href": "/about",
+        "label": "About"
+      },
+      {
+        "href": "/projects",
+        "label": "Projects"
+      },
+      {
+        "href": "/gallery",
+        "label": "Gallery"
+      },
+      {
+        "href": "/services",
+        "label": "Services"
+      }
+    ],
+    "moreNavigation": [
+      {
+        "href": "/team",
+        "label": "Team"
+      },
+      {
+        "href": "/process",
+        "label": "Process"
+      },
+      {
+        "href": "/faq",
+        "label": "FAQ"
+      }
+    ],
+    "socials": [
+      {
+        "name": "Instagram",
+        "href": "https://www.instagram.com/"
+      },
+      {
+        "name": "Facebook",
+        "href": "https://www.facebook.com/"
+      },
+      {
+        "name": "LinkedIn",
+        "href": "https://www.linkedin.com/"
+      },
+      {
+        "name": "YouTube",
+        "href": "https://www.youtube.com/"
+      }
+    ],
+    "assets": {
+      "hero1": "/images/home/hero1.jpg",
+      "hero2": "/images/home/hero2.jpg",
+      "hero3": "/images/home/hero3.jpg",
+      "living1": "/images/services/living1.jpg",
+      "living2": "/images/gallery/living2.jpg",
+      "living3": "/images/services/living3.jpg",
+      "living4": "/images/about/living4.jpg",
+      "living5": "/images/projects/living5.jpg",
+      "living6": "/images/about/living6.jpg",
+      "living7": "/images/about/living7.jpg",
+      "living8": "/images/about/living8.jpg",
+      "living9": "/images/home/living9.jpg",
+      "living10": "/images/about/living10.jpg",
+      "living11": "/images/gallery/living11.jpg",
+      "kitchen1": "/images/services/kitchen1.jpg",
+      "kitchen2": "/images/services/kitchen2.jpg",
+      "kitchen3": "/images/projects/kitchen3.jpg",
+      "kitchen4": "/images/projects/kitchen4.jpg",
+      "apartment": "/images/projects/apartment.jpg",
+      "bedroom1": "/images/projects/bedroom1.jpg",
+      "bedroom2": "/images/projects/bedroom2.jpg",
+      "bedroom3": "/images/projects/bedroom3.jpg",
+      "bedroom4": "/images/projects/bedroom4.jpg",
+      "office1": "/images/services/office1.jpg",
+      "office2": "/images/services/office2.jpg",
+      "restaurant1": "/images/services/restaurant1.jpg",
+      "restaurant2": "/images/projects/restaurant2.jpg",
+      "hotel1": "/images/projects/hotel1.jpg",
+      "hotel2": "/images/projects/hotel2.jpg",
+      "villa1": "/images/home/villa1.jpg",
+      "villa2": "/images/projects/villa2.jpg",
+      "villa3": "/images/about/villa3.jpg",
+      "villa4": "/images/projects/villa4.jpg",
+      "decor1": "/images/about/decor1.jpg",
+      "decor2": "/images/services/decor2.jpg",
+      "extra1": "/images/services/extra1.jpg",
+      "extra2": "/images/services/extra2.jpg",
+      "extra3": "/images/services/extra3.jpg",
+      "extra4": "/images/services/extra4.jpg",
+      "extra5": "/images/services/extra5.jpg",
+      "extra6": "/images/services/extra6.jpg",
+      "decor3": "/images/about/decor3.jpg"
+    },
+    "pageHeroes": {
+      "about": {
+        "metaTitle": "About Us",
+        "crumb": "About Us",
+        "title": "About\nAura Spaces",
+        "subtitle": "Beautiful, functional spaces that reflect your lifestyle.",
+        "image": "/images/about/living6.jpg"
+      },
+      "projects": {
+        "metaTitle": "Projects",
+        "crumb": "Projects",
+        "title": "Our\nProjects",
+        "subtitle": "Residential, commercial and hospitality spaces.",
+        "image": "/images/projects/living5.jpg"
+      },
+      "gallery": {
+        "metaTitle": "Gallery",
+        "crumb": "Gallery",
+        "title": "Our\nGallery",
+        "subtitle": "Beautiful spaces, designed with passion and precision.",
+        "image": "/images/gallery/living11.jpg"
+      },
+      "services": {
+        "metaTitle": "Services",
+        "crumb": "Services",
+        "title": "Our\nServices",
+        "subtitle": "Complete interior solutions for homes, offices and hospitality.",
+        "image": "/images/gallery/living2.jpg"
+      },
+      "team": {
+        "metaTitle": "Our Team",
+        "crumb": "Team",
+        "title": "Our\nTeam",
+        "subtitle": "Talented designers and creative professionals.",
+        "image": "/images/services/office2.jpg"
+      },
+      "process": {
+        "metaTitle": "Our Process",
+        "crumb": "Process",
+        "title": "Our\nProcess",
+        "subtitle": "A simple, transparent path to bring your vision to life.",
+        "image": "/images/about/living7.jpg"
+      },
+      "faq": {
+        "metaTitle": "FAQ",
+        "crumb": "FAQ",
+        "title": "Frequently\nAsked Questions",
+        "subtitle": "Answers about our interior design services.",
+        "image": "/images/about/living4.jpg"
+      },
+      "contact": {
+        "metaTitle": "Contact",
+        "crumb": "Contact",
+        "title": "Get In\nTouch",
+        "subtitle": "Let's discuss your project and create something amazing together.",
+        "image": "/images/home/hero3.jpg"
+      }
+    },
+    "stats": [
+      {
+        "value": 10,
+        "suffix": "+",
+        "label": "Years Experience"
+      },
+      {
+        "value": 250,
+        "suffix": "+",
+        "label": "Projects Completed"
+      },
+      {
+        "value": 98,
+        "suffix": "%",
+        "label": "Client Satisfaction"
+      }
+    ],
+    "cta": {
+      "title": "Let's Create Your Dream Space",
+      "text": "Free consultation. Personal quote.",
+      "buttonLabel": "Contact Us",
+      "image": "/images/home/hero3.jpg"
+    }
+  },
+  "categories": {
+    "AuraSpaces": {
+      "sections": {
+        "Home": {
+          "slides": [
+            {
+              "image": "/images/home/hero1.jpg",
+              "title": "Modern Elegance",
+              "subtitle": "Contemporary style, classic comfort."
+            },
+            {
+              "image": "/images/home/hero2.jpg",
+              "title": "Inspired Spaces",
+              "subtitle": "Designed around the way you live."
+            },
+            {
+              "image": "/images/home/villa1.jpg",
+              "title": "Luxury Living",
+              "subtitle": "From concept to the final reveal."
+            }
+          ],
+          "about": {
+            "eyebrow": "About Us",
+            "titleLines": [
+              "Timeless design,",
+              "thoughtfully crafted."
+            ],
+            "text": "We create warm, elegant spaces that reflect the way you live, blending modern comfort with classic craft.",
+            "features": [
+              "Bespoke Design",
+              "3D Visualization",
+              "Premium Materials",
+              "On-Time Delivery"
+            ],
+            "yearsBadge": {
+              "value": 10,
+              "suffix": "+",
+              "label": "Years"
+            }
+          }
+        },
+        "About": {
+          "values": [
+            {
+              "title": "Timeless",
+              "image": "/images/about/living4.jpg"
+            },
+            {
+              "title": "Functional",
+              "image": "/images/services/kitchen2.jpg"
+            },
+            {
+              "title": "Personal",
+              "image": "/images/projects/bedroom3.jpg"
+            },
+            {
+              "title": "Crafted",
+              "image": "/images/about/decor1.jpg"
+            }
+          ],
+          "missionVision": [
+            {
+              "key": "mission",
+              "label": "Our Mission",
+              "image": "/images/about/living7.jpg",
+              "statement": "To design spaces that feel personal, work beautifully and stand the test of time.",
+              "points": [
+                "Listen first, design with purpose",
+                "Honest pricing, no surprises",
+                "Craftsmanship in every detail"
+              ]
+            },
+            {
+              "key": "vision",
+              "label": "Our Vision",
+              "image": "/images/about/villa3.jpg",
+              "statement": "To be the most trusted name in luxury interiors, inspiring better everyday living.",
+              "points": [
+                "Sustainable, lasting materials",
+                "Design-led innovation",
+                "Lifelong client relationships"
+              ]
+            }
+          ]
+        },
+        "Services": {
+          "items": [
+            {
+              "slug": "residential",
+              "title": "Residential Design",
+              "text": "Homes that feel like you.",
+              "image": "/images/services/living1.jpg"
+            },
+            {
+              "slug": "commercial",
+              "title": "Commercial Spaces",
+              "text": "Offices and stores that inspire.",
+              "image": "/images/services/office1.jpg"
+            },
+            {
+              "slug": "consultation",
+              "title": "Interior Consultation",
+              "text": "Expert guidance, every step.",
+              "image": "/images/about/living7.jpg"
+            },
+            {
+              "slug": "hospitality",
+              "title": "Hospitality Design",
+              "text": "Hotels and restaurants with soul.",
+              "image": "/images/services/restaurant1.jpg"
+            },
+            {
+              "slug": "styling",
+              "title": "Styling & Decor",
+              "text": "The final layer of luxury.",
+              "image": "/images/services/decor2.jpg"
+            },
+            {
+              "slug": "turnkey",
+              "title": "Turnkey Execution",
+              "text": "From concept to keys in hand.",
+              "image": "/images/services/kitchen1.jpg"
+            },
+            {
+              "slug": "kitchen",
+              "title": "Kitchen Design",
+              "text": "Where function meets beauty.",
+              "image": "/images/services/kitchen2.jpg"
+            },
+            {
+              "slug": "bedroom",
+              "title": "Bedroom Design",
+              "text": "Calm retreats for deep rest.",
+              "image": "/images/services/extra1.jpg"
+            },
+            {
+              "slug": "lighting",
+              "title": "Lighting Design",
+              "text": "Layers of light, layers of mood.",
+              "image": "/images/services/extra2.jpg"
+            },
+            {
+              "slug": "furniture",
+              "title": "Furniture Curation",
+              "text": "Pieces chosen to last a lifetime.",
+              "image": "/images/services/extra3.jpg"
+            },
+            {
+              "slug": "renovation",
+              "title": "Home Renovation",
+              "text": "New life for familiar spaces.",
+              "image": "/images/services/extra4.jpg"
+            },
+            {
+              "slug": "3d",
+              "title": "3D Visualization",
+              "text": "See your space before it's built.",
+              "image": "/images/services/extra5.jpg"
+            }
+          ],
+          "details": {
+            "residential": {
+              "intro": "Complete home interiors shaped around your family, your habits and your taste.",
+              "features": [
+                "Space planning",
+                "Custom furniture",
+                "Material & finish curation",
+                "Lighting design"
+              ],
+              "gallery": [
+                "/images/gallery/living2.jpg",
+                "/images/projects/living5.jpg",
+                "/images/projects/bedroom1.jpg",
+                "/images/services/kitchen2.jpg"
+              ],
+              "category": "Residential",
+              "duration": "3–6 Months"
+            },
+            "commercial": {
+              "intro": "Workplaces and stores that reflect your brand and help people do their best work.",
+              "features": [
+                "Brand-led design",
+                "Workspace planning",
+                "Acoustic solutions",
+                "Fit-out management"
+              ],
+              "gallery": [
+                "/images/services/office1.jpg",
+                "/images/services/office2.jpg",
+                "/images/home/living9.jpg",
+                "/images/gallery/living11.jpg"
+              ],
+              "category": "Commercial",
+              "duration": "2–5 Months"
+            },
+            "consultation": {
+              "intro": "Expert advice for a single room or a whole home, so every decision feels right.",
+              "features": [
+                "On-site visit",
+                "Layout review",
+                "Colour & material advice",
+                "Shopping list"
+              ],
+              "gallery": [
+                "/images/about/living7.jpg",
+                "/images/services/decor2.jpg",
+                "/images/about/living4.jpg",
+                "/images/services/extra3.jpg"
+              ],
+              "category": "Residential",
+              "duration": "1–2 Weeks"
+            },
+            "hospitality": {
+              "intro": "Hotels, restaurants and lounges with atmosphere guests remember.",
+              "features": [
+                "Concept & storytelling",
+                "Guest journey design",
+                "Bespoke lighting",
+                "Durable luxury finishes"
+              ],
+              "gallery": [
+                "/images/services/restaurant1.jpg",
+                "/images/projects/hotel1.jpg",
+                "/images/projects/hotel2.jpg",
+                "/images/projects/restaurant2.jpg"
+              ],
+              "category": "Hospitality",
+              "duration": "4–12 Months"
+            },
+            "styling": {
+              "intro": "The final layer: art, textiles and accessories that make a space feel finished.",
+              "features": [
+                "Art selection",
+                "Soft furnishings",
+                "Decor sourcing",
+                "Seasonal refresh"
+              ],
+              "gallery": [
+                "/images/services/decor2.jpg",
+                "/images/about/decor1.jpg",
+                "/images/about/living6.jpg",
+                "/images/services/extra6.jpg"
+              ],
+              "category": "Residential",
+              "duration": "2–4 Weeks"
+            },
+            "turnkey": {
+              "intro": "One team from concept to keys in hand. You move in, we handle the rest.",
+              "features": [
+                "Design & 3D visuals",
+                "Civil & MEP works",
+                "Furniture & fit-out",
+                "Final styling"
+              ],
+              "gallery": [
+                "/images/services/kitchen1.jpg",
+                "/images/projects/villa2.jpg",
+                "/images/about/villa3.jpg",
+                "/images/projects/villa4.jpg"
+              ],
+              "category": "Residential",
+              "duration": "4–8 Months"
+            },
+            "kitchen": {
+              "intro": "Kitchens that work beautifully, with smart storage and lasting materials.",
+              "features": [
+                "Ergonomic layouts",
+                "Modular cabinetry",
+                "Stone & wood surfaces",
+                "Appliance integration"
+              ],
+              "gallery": [
+                "/images/services/kitchen2.jpg",
+                "/images/services/kitchen1.jpg",
+                "/images/projects/kitchen3.jpg",
+                "/images/projects/kitchen4.jpg"
+              ],
+              "category": "Residential",
+              "duration": "6–10 Weeks"
+            },
+            "bedroom": {
+              "intro": "Calm, layered bedrooms designed for rest and quiet luxury.",
+              "features": [
+                "Bespoke headboards",
+                "Wardrobe design",
+                "Layered lighting",
+                "Soft textiles"
+              ],
+              "gallery": [
+                "/images/services/extra1.jpg",
+                "/images/projects/bedroom1.jpg",
+                "/images/projects/bedroom3.jpg",
+                "/images/projects/bedroom4.jpg"
+              ],
+              "category": "Residential",
+              "duration": "4–8 Weeks"
+            },
+            "lighting": {
+              "intro": "Light that shapes mood, highlights texture and changes with the day.",
+              "features": [
+                "Lighting plans",
+                "Statement fixtures",
+                "Smart controls",
+                "Ambient layering"
+              ],
+              "gallery": [
+                "/images/services/extra2.jpg",
+                "/images/about/living8.jpg",
+                "/images/services/restaurant1.jpg",
+                "/images/services/living3.jpg"
+              ],
+              "category": "Residential",
+              "duration": "2–4 Weeks"
+            },
+            "furniture": {
+              "intro": "Furniture chosen and made to last, in perfect proportion to your space.",
+              "features": [
+                "Custom pieces",
+                "Curated brands",
+                "Upholstery & finishes",
+                "Delivery & placement"
+              ],
+              "gallery": [
+                "/images/services/extra3.jpg",
+                "/images/projects/living5.jpg",
+                "/images/about/living10.jpg",
+                "/images/about/decor1.jpg"
+              ],
+              "category": "Residential",
+              "duration": "4–10 Weeks"
+            },
+            "renovation": {
+              "intro": "Fresh life for familiar spaces, keeping what you love and reworking the rest.",
+              "features": [
+                "Condition survey",
+                "Structural changes",
+                "New finishes",
+                "Project management"
+              ],
+              "gallery": [
+                "/images/services/extra4.jpg",
+                "/images/about/living4.jpg",
+                "/images/projects/kitchen3.jpg",
+                "/images/projects/bedroom2.jpg"
+              ],
+              "category": "Residential",
+              "duration": "2–5 Months"
+            },
+            "3d": {
+              "intro": "Photorealistic renders and walkthroughs, so you see your space before it's built.",
+              "features": [
+                "Photoreal renders",
+                "360° walkthroughs",
+                "Material swaps",
+                "Fast revisions"
+              ],
+              "gallery": [
+                "/images/services/extra5.jpg",
+                "/images/home/hero1.jpg",
+                "/images/gallery/living2.jpg",
+                "/images/services/extra6.jpg"
+              ],
+              "category": "Commercial",
+              "duration": "1–3 Weeks"
+            }
+          },
+          "highlights": [
+            {
+              "value": 250,
+              "suffix": "+",
+              "label": "Projects"
+            },
+            {
+              "value": 98,
+              "suffix": "%",
+              "label": "Happy Clients"
+            },
+            {
+              "value": 10,
+              "suffix": "+",
+              "label": "Years"
+            }
+          ]
+        },
+        "Projects": {
+          "filters": [
+            "All",
+            "Residential",
+            "Commercial",
+            "Hospitality"
+          ],
+          "items": [
+            {
+              "slug": "modern-living-room",
+              "title": "Modern Living Room",
+              "category": "Residential",
+              "year": "2024",
+              "location": "New Delhi",
+              "area": "1800 sq. ft.",
+              "duration": "3 Months",
+              "cover": "/images/home/hero1.jpg",
+              "gallery": [
+                "/images/gallery/living2.jpg",
+                "/images/services/living3.jpg",
+                "/images/about/living4.jpg",
+                "/images/about/decor1.jpg",
+                "/images/projects/living5.jpg"
+              ],
+              "text": "Natural textures, warm light and timeless furniture."
+            },
+            {
+              "slug": "luxury-villa",
+              "title": "Luxury Villa",
+              "category": "Residential",
+              "year": "2024",
+              "location": "Goa",
+              "area": "6200 sq. ft.",
+              "duration": "8 Months",
+              "cover": "/images/home/villa1.jpg",
+              "gallery": [
+                "/images/projects/villa2.jpg",
+                "/images/about/villa3.jpg",
+                "/images/projects/villa4.jpg",
+                "/images/projects/kitchen3.jpg",
+                "/images/projects/living5.jpg"
+              ],
+              "text": "Open, airy living framed by sea and sky."
+            },
+            {
+              "slug": "office-interior",
+              "title": "Office Interior",
+              "category": "Commercial",
+              "year": "2023",
+              "location": "Gurugram",
+              "area": "12000 sq. ft.",
+              "duration": "5 Months",
+              "cover": "/images/services/office1.jpg",
+              "gallery": [
+                "/images/services/office2.jpg",
+                "/images/about/living10.jpg",
+                "/images/services/decor2.jpg",
+                "/images/gallery/living11.jpg",
+                "/images/projects/living5.jpg"
+              ],
+              "text": "A calm, focused workplace in warm neutrals."
+            },
+            {
+              "slug": "restaurant-design",
+              "title": "Restaurant Design",
+              "category": "Hospitality",
+              "year": "2023",
+              "location": "Mumbai",
+              "area": "4500 sq. ft.",
+              "duration": "4 Months",
+              "cover": "/images/services/restaurant1.jpg",
+              "gallery": [
+                "/images/projects/restaurant2.jpg",
+                "/images/about/decor3.jpg",
+                "/images/projects/kitchen4.jpg",
+                "/images/about/living8.jpg",
+                "/images/projects/living5.jpg"
+              ],
+              "text": "Moody, intimate dining with crafted details."
+            },
+            {
+              "slug": "minimal-bedroom",
+              "title": "Minimal Bedroom",
+              "category": "Residential",
+              "year": "2024",
+              "location": "Bengaluru",
+              "area": "600 sq. ft.",
+              "duration": "6 Weeks",
+              "cover": "/images/projects/bedroom1.jpg",
+              "gallery": [
+                "/images/projects/bedroom2.jpg",
+                "/images/projects/bedroom3.jpg",
+                "/images/projects/bedroom4.jpg",
+                "/images/about/decor1.jpg",
+                "/images/projects/living5.jpg"
+              ],
+              "text": "Soft layers and quiet tones for deep rest."
+            },
+            {
+              "slug": "hotel-interior",
+              "title": "Hotel Interior",
+              "category": "Hospitality",
+              "year": "2022",
+              "location": "Jaipur",
+              "area": "28000 sq. ft.",
+              "duration": "11 Months",
+              "cover": "/images/projects/hotel1.jpg",
+              "gallery": [
+                "/images/projects/hotel2.jpg",
+                "/images/projects/bedroom4.jpg",
+                "/images/projects/living5.jpg",
+                "/images/projects/restaurant2.jpg",
+                "/images/projects/living5.jpg"
+              ],
+              "text": "Heritage warmth meets contemporary comfort."
+            },
+            {
+              "slug": "boutique-kitchen",
+              "title": "Boutique Kitchen",
+              "category": "Residential",
+              "year": "2024",
+              "location": "Chandigarh",
+              "area": "400 sq. ft.",
+              "duration": "2 Months",
+              "cover": "/images/services/kitchen1.jpg",
+              "gallery": [
+                "/images/services/kitchen2.jpg",
+                "/images/projects/kitchen3.jpg",
+                "/images/projects/kitchen4.jpg",
+                "/images/about/decor3.jpg",
+                "/images/projects/living5.jpg"
+              ],
+              "text": "Stone, oak and brass in perfect balance."
+            },
+            {
+              "slug": "studio-showroom",
+              "title": "Studio Showroom",
+              "category": "Commercial",
+              "year": "2023",
+              "location": "Pune",
+              "area": "3200 sq. ft.",
+              "duration": "3 Months",
+              "cover": "/images/home/living9.jpg",
+              "gallery": [
+                "/images/about/living6.jpg",
+                "/images/services/decor2.jpg",
+                "/images/about/living7.jpg",
+                "/images/services/office2.jpg",
+                "/images/projects/living5.jpg"
+              ],
+              "text": "A gallery-like stage for curated furniture."
+            },
+            {
+              "slug": "penthouse-lounge",
+              "title": "Penthouse Lounge",
+              "category": "Residential",
+              "year": "2025",
+              "location": "Hyderabad",
+              "area": "3400 sq. ft.",
+              "duration": "5 Months",
+              "cover": "/images/projects/living5.jpg",
+              "gallery": [
+                "/images/about/living6.jpg",
+                "/images/about/living8.jpg",
+                "/images/projects/apartment.jpg",
+                "/images/projects/bedroom3.jpg",
+                "/images/projects/living5.jpg"
+              ],
+              "text": "City views, layered textures, effortless ease."
+            }
+          ]
+        },
+        "Gallery": {
+          "filters": [
+            "All",
+            "Living Room",
+            "Bedroom",
+            "Kitchen",
+            "Office"
+          ],
+          "items": [
+            {
+              "src": "/images/gallery/living2.jpg",
+              "tag": "Living Room"
+            },
+            {
+              "src": "/images/projects/bedroom1.jpg",
+              "tag": "Bedroom"
+            },
+            {
+              "src": "/images/services/kitchen1.jpg",
+              "tag": "Kitchen"
+            },
+            {
+              "src": "/images/services/office1.jpg",
+              "tag": "Office"
+            },
+            {
+              "src": "/images/services/living3.jpg",
+              "tag": "Living Room"
+            },
+            {
+              "src": "/images/about/living8.jpg",
+              "tag": "Living Room"
+            },
+            {
+              "src": "/images/projects/bedroom2.jpg",
+              "tag": "Bedroom"
+            },
+            {
+              "src": "/images/services/kitchen2.jpg",
+              "tag": "Kitchen"
+            },
+            {
+              "src": "/images/services/office2.jpg",
+              "tag": "Office"
+            },
+            {
+              "src": "/images/projects/living5.jpg",
+              "tag": "Living Room"
+            },
+            {
+              "src": "/images/projects/bedroom3.jpg",
+              "tag": "Bedroom"
+            },
+            {
+              "src": "/images/projects/kitchen4.jpg",
+              "tag": "Kitchen"
+            },
+            {
+              "src": "/images/home/living9.jpg",
+              "tag": "Living Room"
+            },
+            {
+              "src": "/images/projects/bedroom4.jpg",
+              "tag": "Bedroom"
+            },
+            {
+              "src": "/images/gallery/living11.jpg",
+              "tag": "Office"
+            }
+          ]
+        },
+        "Team": {
+          "items": [
+            {
+              "name": "Priya Sharma",
+              "role": "Founder & CEO",
+              "image": "/images/team/priya-sharma.jpg"
+            },
+            {
+              "name": "Rahul Mehta",
+              "role": "Lead Designer",
+              "image": "/images/team/rahul-mehta.jpg"
+            },
+            {
+              "name": "Ananya Singh",
+              "role": "Interior Architect",
+              "image": "/images/team/ananya-singh.jpg"
+            },
+            {
+              "name": "Vikram Rao",
+              "role": "Project Manager",
+              "image": "/images/team/vikram-rao.jpg"
+            },
+            {
+              "name": "Neha Kapoor",
+              "role": "3D Visualizer",
+              "image": "/images/team/neha-kapoor.jpg"
+            },
+            {
+              "name": "Arjun Verma",
+              "role": "Site Supervisor",
+              "image": "/images/team/arjun-verma.jpg"
+            },
+            {
+              "name": "Sanya Malhotra",
+              "role": "Senior Designer",
+              "image": "/images/team/sanya-malhotra.jpg"
+            },
+            {
+              "name": "Karan Joshi",
+              "role": "Lighting Designer",
+              "image": "/images/team/karan-joshi.jpg"
+            },
+            {
+              "name": "Meera Iyer",
+              "role": "Styling Lead",
+              "image": "/images/team/meera-iyer.jpg"
+            },
+            {
+              "name": "Rohan Gupta",
+              "role": "Procurement Head",
+              "image": "/images/team/rohan-gupta.jpg"
+            },
+            {
+              "name": "Isha Nair",
+              "role": "Client Relations",
+              "image": "/images/team/isha-nair.jpg"
+            },
+            {
+              "name": "Dev Patel",
+              "role": "Junior Architect",
+              "image": "/images/team/dev-patel.jpg"
+            }
+          ]
+        },
+        "Process": {
+          "steps": [
+            {
+              "title": "Initial Consultation",
+              "text": "Your needs, style and budget.",
+              "image": "/images/about/living7.jpg"
+            },
+            {
+              "title": "Concept & Design",
+              "text": "Moodboards and 3D visuals.",
+              "image": "/images/services/decor2.jpg"
+            },
+            {
+              "title": "Planning & Execution",
+              "text": "Precise planning, quality craft.",
+              "image": "/images/projects/kitchen3.jpg"
+            },
+            {
+              "title": "Final Reveal",
+              "text": "A space you'll love.",
+              "image": "/images/home/hero2.jpg"
+            }
+          ]
+        },
+        "FAQ": {
+          "items": [
+            {
+              "q": "What types of projects do you handle?",
+              "a": "Homes, villas, offices, retail, restaurants and hotels — from a single room to complete turnkey builds."
+            },
+            {
+              "q": "How long does a typical project take?",
+              "a": "A single room takes 4–8 weeks. A full home usually takes 3–6 months depending on scope."
+            },
+            {
+              "q": "Do you provide 3D design visualizations?",
+              "a": "Yes. Every project includes photorealistic 3D renders so you can see your space before we build it."
+            },
+            {
+              "q": "Can you work within my budget?",
+              "a": "Absolutely. We plan materials and finishes around your budget without compromising on quality."
+            },
+            {
+              "q": "Do you handle both residential and commercial projects?",
+              "a": "Yes — our team has delivered 250+ residential, commercial and hospitality spaces."
+            },
+            {
+              "q": "How do I get started?",
+              "a": "Book a free consultation through our contact page. We'll call you within 24 hours."
+            }
+          ]
+        }
+      }
+    }
+  }
+}
