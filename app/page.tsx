@@ -32,9 +32,9 @@ export default function Home() {
               <Image src={assets.living8} alt="Aura Spaces dining room" fill sizes="(min-width:768px) 40vw, 90vw" className="object-cover" />
             </div>
           </Reveal>
-          <Reveal variant="wipe" delay={300} className="absolute bottom-0 right-0 w-[48%]">
-            <div className="zoom-img relative aspect-square overflow-hidden rounded-3xl border-[6px] border-cream shadow-2xl">
-              <Image src={assets.decor1} alt="Styled sofa detail" fill sizes="25vw" className="object-cover" />
+          <Reveal variant="wipe" delay={300} className="absolute bottom-0 right-0 w-[50%]">
+            <div className="zoom-img relative aspect-square overflow-hidden rounded-3xl border-[6px] border-cream shadow-xl">
+              <Image src={assets.decor1} alt="Styled sofa detail" fill sizes="28vw" className="object-cover" />
             </div>
           </Reveal>
           <Reveal dir="zoom" delay={500} className="absolute left-5 top-5 md:left-8 md:top-8">

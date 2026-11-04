@@ -92,12 +92,14 @@ body {
 
 /* Image mask wipe */
 /* clip the child: IntersectionObserver never fires on a fully clipped target */
+/* The end state sits 40px outside the box so rounded corners and box-shadows are never
+   cut by a square clip (that left dark shadow wedges in the corners). */
 .wipe > * {
-  clip-path: inset(0 0 100% 0);
+  clip-path: inset(0 -40px 100% -40px);
   transition: clip-path 1.4s cubic-bezier(0.77, 0, 0.18, 1);
   transition-delay: var(--d, 0ms);
 }
-.wipe.is-in > * { clip-path: inset(0 0 0 0); }
+.wipe.is-in > * { clip-path: inset(-40px); }
 
 /* Split word heading */
 .split-word {
@@ -154,7 +156,14 @@ body {
   to { transform: translateX(-50%); }
 }
 
-/* Hover zoom on image cards */
+/* Hover zoom on image cards.
+   Own compositing layer so the rounded overflow clip holds while the image scales;
+   without it the scaled image can bleed a sub-pixel dark line past the edge. */
+.zoom-img {
+  isolation: isolate;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
 .zoom-img img {
   transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }

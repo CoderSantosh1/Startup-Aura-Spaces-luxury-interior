@@ -70,13 +70,13 @@ export default function AboutPage() {
               return (
                 <Reveal key={p.label} delay={i * 180} dir={dark ? "right" : "left"} className="h-full">
                   <article
-                    className={`group flex h-full flex-col overflow-hidden rounded-3xl shadow-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl ${
+                    className={`group flex h-full flex-col overflow-hidden rounded-3xl shadow-sm transition-[translate,box-shadow] duration-500 [backface-visibility:hidden] hover:-translate-y-1 hover:shadow-2xl ${
                       dark ? "bg-olive text-cream" : "bg-white text-ink"
                     }`}
                   >
                     <div className="zoom-img relative aspect-[16/8] overflow-hidden">
                       <Image src={p.image} alt="" fill sizes="(min-width:768px) 50vw, 100vw" className="object-cover" />
-                      <div className={`absolute inset-0 bg-gradient-to-t ${dark ? "from-olive" : "from-white"} via-transparent to-transparent`} />
+                      <div className={`absolute inset-x-0 top-0 -bottom-px bg-gradient-to-t ${dark ? "from-olive" : "from-white"} from-10% via-transparent to-transparent`} />
                     </div>
                     <div className="-mt-10 flex flex-1 flex-col px-8 pb-10 md:px-10">
                       <span className="relative grid h-16 w-16 place-items-center rounded-full bg-gold text-olive shadow-lg ring-8 ring-gold/20 transition-transform duration-500 group-hover:rotate-12">
