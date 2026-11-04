@@ -117,7 +117,7 @@ export default function Header() {
           otherwise become its containing block and shrink this fixed panel to the header's size. */}
       <div
         aria-hidden={!open}
-        className={`fixed inset-0 z-40 flex h-dvh flex-col overflow-y-auto overscroll-contain bg-olive px-8 pb-8 pt-20 transition-all duration-700 lg:hidden ${
+        className={`fixed inset-0 z-40 flex h-dvh flex-col   bg-olive px-8 pb-8 pt-20 transition-all duration-700 lg:hidden ${
           open ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >
@@ -136,10 +136,10 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-        <div className={`mt-10 space-y-1 text-base text-cream/70 transition-opacity delay-500 duration-700 ${open ? "opacity-100" : "opacity-0"}`}>
+        {/* <div className={`mt-10 space-y-1 text-base text-cream/70 transition-opacity delay-500 duration-700 ${open ? "opacity-100" : "opacity-0"}`}>
           <a href={site.phoneHref} className="block hover:text-gold">{site.phone}</a>
           <a href={`mailto:${site.email}`} className="block hover:text-gold">{site.email}</a>
-        </div>
+        </div> */}
       </div>
     </>
   );
