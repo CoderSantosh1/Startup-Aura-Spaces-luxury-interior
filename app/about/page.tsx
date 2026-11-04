@@ -76,7 +76,7 @@ export default function AboutPage() {
                   >
                     <div className="zoom-img relative aspect-[16/8] overflow-hidden">
                       <Image src={p.image} alt="" fill sizes="(min-width:768px) 50vw, 100vw" className="object-cover" />
-                      <div className={`absolute inset-x-0 top-0 -bottom-px bg-gradient-to-t ${dark ? "from-olive" : "from-white"} from-10% via-transparent to-transparent`} />
+                      {/* <div className={`absolute inset-x-0 top-0 -bottom-px bg-gradient-to-t ${dark ? "from-olive" : "from-white"} from-10% via-transparent to-transparent`} /> */}
                     </div>
                     <div className="-mt-10 flex flex-1 flex-col px-8 pb-10 md:px-10">
                       <span className="relative grid h-16 w-16 place-items-center rounded-full bg-gold text-olive shadow-lg ring-8 ring-gold/20 transition-transform duration-500 group-hover:rotate-12">
@@ -84,7 +84,7 @@ export default function AboutPage() {
                       </span>
                       <p className="mt-6 text-sm uppercase tracking-[0.25em] text-gold">{p.label}</p>
                       <h3 className="mt-3 text-2xl font-light leading-snug md:text-3xl">{p.statement}</h3>
-                      <ul className={`mt-8 space-y-4 border-t pt-6 ${dark ? "border-cream/15" : "border-ink/10"}`}>
+                      <ul className={`mt-8 space-y-4  pt-6 ${dark ? "border-cream/15" : "border-ink/10"}`}>
                         {p.points.map((pt) => (
                           <li key={pt} className="flex items-center gap-3 text-base">
                             <span className={`grid h-6 w-6 shrink-0 place-items-center rounded-full text-xs ${dark ? "bg-gold text-olive" : "bg-olive text-gold"}`}>✓</span>
